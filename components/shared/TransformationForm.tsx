@@ -242,7 +242,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
                             type === 'remove' ? "Object to remove" : 'Object to recolor'
                         }
                         className="w-full"
-                        render={(({field})=>(
+                        render={({field})=>(
                             <Input
                                 value={field.value}
                                 className="input-field"
@@ -253,7 +253,7 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
                                     field.onChange
                                 )}
                             />
-                        ))}
+                        )}
                         />
                         {type === 'recolor' && (
                             <CustomField
